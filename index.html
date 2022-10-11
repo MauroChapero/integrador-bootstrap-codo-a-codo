@@ -17,9 +17,9 @@
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark px-5">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-5">
         <div class="container-fluid">
-          <a class="navbar-brand text-white ps-5" href="#">
+          <a class="navbar-brand ps-5" href="/index.html">
             <img
               src="../images/codoacodo.png"
               alt="logo codo a codo"
@@ -41,18 +41,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="/index.html"
                   >La conferencia</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50" href="#">Los oradores</a>
+                <a class="nav-link" href="#">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#">El lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50" href="#"
+                <a class="nav-link" href="/js-index.html"
                   >Conviértete en orador</a
                 >
               </li>
@@ -91,7 +91,7 @@
           <p class="mb-0">CONOCE A LOS</p>
           <P class="h2">ORADORES</P>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card border-0 mb-3" style="width: 18rem;">
           <img src="../images/steve.jpg" class="card-img-top" alt="steve jobs">
           <div class="card-body">
             <span class="text-bg-warning rounded fw-bold p-1">JavaScript</span>
@@ -100,7 +100,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vitae id, vel saepe dolores delectus nesciunt at sit voluptatibus maiores voluptates debitis quis, hic facere aspernatur architecto dicta unde maxime.</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card border-0 mb-3" style="width: 18rem;">
           <img src="../images/bill.jpg" class="card-img-top" alt="bill gates">
           <div class="card-body">
             <span class="text-bg-warning rounded fw-bold p-1">JavaScript</span>
@@ -109,7 +109,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vitae id, vel saepe dolores delectus nesciunt at sit voluptatibus maiores voluptates debitis quis, hic facere aspernatur architecto dicta unde maxime.</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card border-0 mb-3" style="width: 18rem;">
           <img src="../images/ada.jpeg" class="card-img-top" alt="ada lovelace">
           <div class="card-body">
             <span class="text-bg-secondary text-white rounded fw-bold p-1">Negocios</span>
@@ -138,12 +138,38 @@
       </section>
       <!-- Conviertete en un orador -->
       <section>
-        <div class="text-center">
-          <p class="mb-1">CONVIÉRTETE EN UN</p>
-          <p class="h2">ORADOR</p>
-          <p class="mt-1">Anótate como orador para dar una <span class="subrrayado">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+        <div class="row">
+          <div class="text-center">
+            <p class="mb-1">CONVIÉRTETE EN UN</p>
+            <p class="h2">ORADOR</p>
+            <p class="mt-1">Anótate como orador para dar una <span class="subrrayado">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+          </div>
         </div>
-        <form action="#" class="row justify-content-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-2"></div>
+          <div class="col-sm-12 col-md-8">
+            <form action="#" class="row">
+              <div class="col-sm-12 col-md-6 mb-3 mb-sm-3 mb-md-0 mx-2 mx-sm-2 mx-md-0">
+                <input class="form-control" type="text" placeholder="Nombre">
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3 mb-sm-3 mb-md-0 mx-2 mx-sm-2 mx-md-0">
+                <input class="form-control" type="text" placeholder="Apellido">
+              </div>
+              <div class="col-sm-12 form-floating mb-2 mx-2 mx-sm-2 mx-md-0">
+                <textarea class="form-control mt-sm-1 mt-md-4" name="about" id="about" style="height: 100px;"></textarea>
+                <label class="mt-4 ms-3" for="about">¿Sobre qué quieres hablar?</label>
+              </div>
+              <div class="col-sm-12 mb-1 mx-2 mx-sm-2 mx-md-0">
+                <p class="text-muted"><small>Recuerde incluir un título para tu charla</small></p>
+              </div>
+              <div class="col-sm-12 mb-4 mx-2 mx-sm-2 mx-md-0">
+                <button class="btn btn-success w-100">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- <form action="#" class="row justify-content-center">
           <div class="col-4">
             <label for="nombre" class="form-label"></label>
             <input type="text" id="nombre" class="form-control" placeholder="Nombre">
@@ -161,7 +187,7 @@
           <div class="col-8 my-3">
             <button class="btn btn-success w-100">Enviar</button>
           </div>
-        </form>
+        </form> -->
       </section>
     </main>
     <!-- FOOTER -->

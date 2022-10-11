@@ -1,0 +1,16 @@
+.no-radius {
+    border-radius: 0;
+}
+footer {
+    background: rgb(19, 44, 57);
+    background: linear-gradient(
+      90deg,
+      rgba(19, 44, 57, 1) 25%,
+      rgba(21, 53, 72, 1) 50%,
+      rgba(11, 50, 74, 1) 75%,
+      rgba(2, 58, 87, 1) 100%
+    );
+}
+.bg-lime { 
+    background-color: #97c83f;
+}
